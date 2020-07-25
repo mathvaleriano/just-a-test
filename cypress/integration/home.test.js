@@ -7,6 +7,7 @@ context('Navigation', () => {
 
   it('should show loading', () => {
     cy.contains('.loading', 'Loading...')
+    cy.percySnapshot();
   })
 
   it('should show a list of cards', () => {
@@ -14,6 +15,7 @@ context('Navigation', () => {
     cy.route(`*/breeds*`).as('getBreeds')
     cy.wait('@getBreeds').then(() => {
       cy.get('.card')
+      cy.percySnapshot();
     })
   })
 })
