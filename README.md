@@ -29,7 +29,13 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `yarn cy`
 
-Open cypress
+> need call `yarn start` before in another terminal
+
+Run tests on percy and cypress
+
+### `yarn cy:open`
+
+Open cypress tests
 
 ## Learn More
 
